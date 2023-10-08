@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Definición de menús y acciones -->
+
+    <record id="action_clase" model="ir.actions.act_window">
+        <field name="name">Clases</field>
+        <field name="res_model">moduloCA.clase</field>
+        <field name="view_mode">tree,form</field>
+     
+    </record>
+
+    <menuitem id="main_menu_moduloCA" name="moduloCA" sequence="10"/>
+
+    <menuitem id="submenu_clase" name="Clases" parent="main_menu_moduloCA" action="action_clase" sequence="1"/>
+</odoo>
